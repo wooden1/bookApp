@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>📘 Library App </title>
+</head>
+<body>
+    <main id="container">
+        <h1>Public Library App</h1>
+        <p>
+            Today is: 
+            <time id="today" datetime=""></time>
+        </p>
+    <p>This app supports the following operations:</p>
+    <menu>
+        <a href="listBooks.html">
+            <button type="button">List all books</button>
+        </a>
+        <a href="createBook.html">
+            <button type="button">Add a new book</button>
+        </a>
+        <a href="updateBook.html">
+            <button type="button">Update a book</button>
+        </a>
+        <a href="deleteBook.html">
+            <button type="button">Delete a book</button>
+        </a>
+        <button type="button" onclick="Book.clearData()">Clear Database</button>
+        <button type="button" onclick="Book.createTestData">Create test Data</button>
+    </menu>
+    </main>
+    <script src="./scr/model/Book.js"></script>
+    <script src="./scr/view/assignDate.js"></script>
+    <script>
+        window.addEventListener("load", assignDate);
+    </script>
+</body>
+</html>

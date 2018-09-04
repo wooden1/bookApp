@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>📘 Library app</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./scr/controller/initialize.js"></script>
+    <script src="./scr/model/Book.js"></script>
+    <script src="./scr/view/createBook.js"></script>
+    <script>
+        window.addEventListener('load', lib.view.createBook.setupUserInterface);
+    </script>
+</head>
+<body>
+    <h1>Library App: Create a new book record.</h1>
+    <form action="" id="Book">
+        <label for="isbn">ISBN:<input type="text" name="isbn"></label>
+        <label for="title">Title:<input type="text" name="title"></label>
+        <label for="year">Year:<input type="text" name="year"></label>
+        <button type="button" name="commit">Save</button>
+    </form>>
+    <nav><a href="index.html">Back to main menu</a></nav>
+</body>
+</html>
